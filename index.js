@@ -14,3 +14,9 @@ let lastInput = allInputs[allInputs.length - 1];
 console.log(lastInput)
 
 //по последнему вопросу он выведет body хотя я вначале думал что выведет form потом понял что body находится внутри innerhtml
+
+let body = document.body;
+
+body.innerHTML = "<!--" + body.tagName + "-->";
+
+alert( body.firstChild.data ); // что выведет?
